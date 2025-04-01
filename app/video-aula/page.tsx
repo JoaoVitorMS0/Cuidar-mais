@@ -6,11 +6,21 @@ import { BottomNavigation } from "@/components/bottom-navigation"
 
 export default function VideoAula() {
   const [isPlaying, setIsPlaying] = useState(false)
+  // Opção 1: Remover o estado não utilizado
+  // const [progress, setProgress] = useState(0)
+  
+  // Opção 2: Usar o estado
   const [progress, setProgress] = useState(0)
   const videoRef = useRef<HTMLDivElement>(null)
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying)
+    // Usar setProgress para simular progresso do vídeo quando é reproduzido
+    if (!isPlaying) {
+      setProgress(30) // Simula algum progresso quando o vídeo começa a tocar
+    } else {
+      setProgress(0) // Reseta o progresso quando pausado
+    }
   }
 
   return (
@@ -194,4 +204,3 @@ export default function VideoAula() {
     </main>
   )
 }
-

@@ -9,7 +9,7 @@ export default function Sobre() {
         <div className="p-6">
           <div className="flex flex-col items-center mb-4">
             <div className="relative h-16 w-16 mb-1">
-              <Image src="/image/logo_cuidar+" alt="Logo" width={64} height={64} />
+              <Image src="/image/logo_cuidar+.png" alt="Logo" width={64} height={64} />
             </div>
             <h2 className="text-xl font-bold">Cuidar+</h2>
             <p className="text-xs uppercase font-medium">CUIDANDO DE VOCÊ!</p>

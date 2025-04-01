@@ -7,7 +7,11 @@ import { Button } from "@/components/ui/button"
 
 export default function Sucesso() {
   const searchParams = useSearchParams()
-  const plano = searchParams.get("plano") || "seu plano"
+  // Usando a variável plano em um comentário ou removendo-a
+  // const plano = searchParams.get("plano") || "seu plano"
+  
+  // Alternativa: usar a variável no texto para mostrar qual plano foi assinado
+  const planoNome = searchParams.get("plano") || "seu plano"
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-green-400">
@@ -42,7 +46,7 @@ export default function Sucesso() {
 
             <h2 className="text-4xl font-bold text-white mb-2">Parabéns</h2>
             <p className="text-white text-center text-xl mb-8">
-              Seu plano foi assinado
+              {planoNome} foi assinado
               <br />
               com sucesso
             </p>
@@ -56,4 +60,3 @@ export default function Sucesso() {
     </main>
   )
 }
-

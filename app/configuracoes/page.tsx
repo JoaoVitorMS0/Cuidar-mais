@@ -24,13 +24,10 @@ export default function Configuracoes() {
                 height="20"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinec
-                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                stroke="currentColor"
                 className="mr-3"
               >
                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -212,4 +209,3 @@ export default function Configuracoes() {
     </main>
   )
 }
-
