@@ -17,7 +17,6 @@ export default function Exercicios() {
           </div>
 
           <div className="w-full h-px bg-gray-300 my-4"></div>
-
           <div className="bg-indigo-800 text-white text-center py-1 rounded-full mb-4 flex items-center justify-center">
             <span className="text-xs mr-4">Olá, João Vitor!</span>
             <span className="text-xs">Primeiros Passos:</span>
